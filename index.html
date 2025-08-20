@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sarah Guan – Portfolio</title>
+  <meta name="description" content="Portfolio of projects, videos, and images." />
+  <link rel="icon" href="assets/favicon.png" />
+  <style>
+    :root {
+      --maxw: 960px;
+    }
+    html, body { margin:0; padding:0; }
+    body {
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      line-height: 1.6;
+      color: #0a0a0a;
+      background: #ffffff;
+    }
+    .container { max-width: var(--maxw); margin: 0 auto; padding: 24px; }
+    header { display:flex; justify-content:space-between; align-items:center; gap:12px; }
+    nav a { margin-left: 16px; text-decoration:none; color:#0a0a0a; opacity:.8; }
+    nav a:hover { opacity:1; }
+    h1 { font-size: clamp(24px, 3vw, 36px); margin: 12px 0 4px; }
+    h2 { font-size: 20px; margin: 32px 0 12px; border-bottom:1px solid #eee; padding-bottom:8px; }
+    p { margin: 0 0 12px; }
+    .grid { display:grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap:16px; }
+    .card { border:1px solid #eee; border-radius:16px; padding:12px; }
+    .thumb { width:100%; height:160px; object-fit:cover; border-radius:12px; border:1px solid #eee; background:#fafafa; }
+
+    /* Responsive 16:9 video wrapper */
+    .video { position: relative; width: 100%; aspect-ratio: 16 / 9; background:#000; border-radius: 12px; overflow:hidden; }
+    .video iframe { position:absolute; inset:0; width:100%; height:100%; border:0; }
+
+    footer { margin: 48px 0 24px; font-size: 14px; color:#666; }
+    .muted { color:#666; }
+    .tag { font-size:12px; padding:2px 8px; border:1px solid #eee; border-radius:999px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div>
+        <h1>Sarah Guan</h1>
+        <div class="muted">Healthcare management • Strategy • Operations</div>
+      </div>
+      <nav>
+        <a href="#projects">Projects</a>
+        <a href="#videos">Videos</a>
+        <a href="#photos">Photos</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section id="intro">
+      <p>
+        Bottom-line up front: I help healthcare teams design simple systems that work. Here are a few projects, short videos, and photos.
+      </p>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="grid">
+        <article class="card">
+          <img class="thumb" src="assets/example-project.jpg" alt="Example project thumbnail" />
+          <h3>Ragon Infusion Workflow</h3>
+          <p class="muted">Capacity & patient experience redesign.</p>
+          <div class="tag">Operations</div>
+        </article>
+        <article class="card">
+          <img class="thumb" src="assets/example-project-2.jpg" alt="Example project thumbnail" />
+          <h3>Safety Survey Rollout</h3>
+          <p class="muted">NDNQI-aligned workforce safety survey.</p>
+          <div class="tag">Quality</div>
+        </article>
+      </div>
+    </section>
+
+    <section id="videos">
+      <h2>Videos</h2>
+      <!-- Replace VIDEO_ID with your YouTube video ID (the part after v= in the URL) -->
+      <div class="video">
+        <iframe src="https://www.youtube.com/embed/VIDEO_ID1" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+      <p class="muted">Short talk: Digital integration in oncology (3 min)</p>
+
+      <div class="video" style="margin-top:16px;">
+        <iframe src="https://www.youtube.com/embed/VIDEO_ID2" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+      <p class="muted">Demo: Lightweight portfolio on GitHub Pages (2 min)</p>
+    </section>
+
+    <section id="photos">
+      <h2>Photos</h2>
+      <div class="grid">
+        <img class="thumb" src="assets/photo-1.jpg" alt="Photo 1 alt text" />
+        <img class="thumb" src="assets/photo-2.jpg" alt="Photo 2 alt text" />
+        <img class="thumb" src="assets/photo-3.jpg" alt="Photo 3 alt text" />
+        <img class="thumb" src="assets/photo-4.jpg" alt="Photo 4 alt text" />
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:sarah@example.com">sarah@example.com</a> · <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a> · <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a></p>
+    </section>
+
+    <footer>
+      © <span id="year"></span> Sarah Guan
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
