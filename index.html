@@ -34,6 +34,15 @@
     footer { margin: 48px 0 24px; font-size: 14px; color:#666; }
     .muted { color:#666; }
     .tag { font-size:12px; padding:2px 8px; border:1px solid #eee; border-radius:999px; }
+
+    .gallery img {
+      width: 100%;
+      aspect-ratio: 16 / 9;   /* force same size as videos */
+      object-fit: cover;      /* crops if needed, keeps consistent look */
+      border-radius: 12px;
+      border: 1px solid #eee;
+      background: #fafafa;
+    }
   </style>
 </head>
 <body>
@@ -72,16 +81,16 @@
 
       <div class="gallery">
         <figure>
-          <img src="assets/Proto1.jpeg" alt="March 2025">
-          <figcaption>Early Ender 3 testing platform. Wiped the stock Marlin board and added the Pi to start developing UI.</figcaption>
+          <img src="assets/Proto1.jpeg">
+          <figcaption>(March 2025) Early Ender 3 testing platform. Wiped the stock Marlin board and added the Pi to start developing UI.</figcaption>
         </figure>
         <figure>
-          <img src="assets/Proto2.jpeg" alt="May 2025">
-          <figcaption>First prototype. Proof of concept for the miniminal, cantilever setup.</figcaption>
+          <img src="assets/Proto2.jpeg">
+          <figcaption>(May 2025) First prototype. Proof of concept for the miniminal, cantilever setup.</figcaption>
         </figure>
         <figure>
-          <img src="assets/LD1_Isometric.jpg" alt="July 2025">
-          <figcaption>Big step forward with custom chassis components, direct drive, and a much more compact form factor.</figcaption>
+          <img src="assets/LD1_Isometric.jpg">
+          <figcaption>(July 2025) Big step forward with custom chassis components, direct drive, and a much more compact form factor.</figcaption>
         </figure>
       </div>
     </article>
