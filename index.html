@@ -22,6 +22,7 @@
     nav a:hover { opacity:1; }
     h1 { font-size: clamp(24px, 3vw, 36px); margin: 12px 0 4px; }
     h2 { font-size: 20px; margin: 32px 0 12px; border-bottom:1px solid #eee; padding-bottom:8px; }
+    h4 { font-size: 16px; margin: 32px 0 12px; border-bottom:1px solid #eee; padding-bottom:8px; }
     p { margin: 0 0 12px; }
     .grid { display:grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap:16px; }
     .card { border:1px solid #eee; border-radius:16px; padding:12px; }
@@ -80,6 +81,7 @@
         </p>
 
       <div class="gallery">
+        <h4> History </h4>
         <figure>
           <img src="assets/Proto1.jpeg">
           <figcaption>(March 2025) Early Ender 3 testing platform. Wiped the stock Marlin board and added the Pi to start developing UI.</figcaption>
@@ -89,7 +91,11 @@
           <figcaption>(May 2025) First prototype. Proof of concept for the miniminal, cantilever setup.</figcaption>
         </figure>
         <figure>
-          <img src="assets/LD1_Isometric.jpg">
+          <div class="video">
+            <iframe src="https://www.youtube.com/embed/a2Jj9I9UMqo"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+          </div>
           <figcaption>(July 2025) Big step forward with custom chassis components, direct drive, and a much more compact form factor.</figcaption>
         </figure>
       </div>
